@@ -1,0 +1,29 @@
+---
+title: Visualizing the Transfer of ILP Packets
+sidebar:
+  order: 3
+---
+
+import { Mermaid } from "@interledger/docs-design-system";
+
+Let’s visualize some of the ILP Learning elements from the prior story. ILP specified three kinds of packets, two of them shown here.
+
+<Mermaid
+  graph={`stateDiagram
+      direction LR
+      Sender --> Connector1 : Prepare
+      Connector1 --> Connector2 : Prepare
+      Connector2  --> Receiver : Prepare
+      Receiver --> Connector2 : Fulfill
+      Connector2 --> Connector1 : Fulfill
+      Connector1 --> Sender : Fulfill
+`}
+/>
+
+**Prepare** packets are the initial communications from the sender to the receiver, communicating that some amount of money needs to be transferred.
+
+**Fulfill** packets confirm that the payment (or IOU) should be completed. As each node in the network gets the Fulfill packet, they adjust their balance and “accept” the IOU. Like in the analogy, each node effectively only deals with its immediate peers, but this can still allow money to go from one node to another node through any number of paths.
+
+The third kind of packet is a **Reject** packet, which does what you expect. If any problems occur at any stage in the process, this packet is sent back, cancelling the transaction.
+
+This whole process happens in milliseconds, and in fact if it doesn’t happen quickly enough, that will itself trigger a Reject packet.
