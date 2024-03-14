@@ -4,7 +4,7 @@ sidebar:
   order: 1
 ---
 
-These three principles are embodied by Interledger in how it approaches and builds solutions for problems.
+These three principles are embodied by Interledger in how we approach and build solutions for problems.
 
 - Interoperability
 - Open source
@@ -24,10 +24,12 @@ Email is built to be interoperable from the start. Someone might be using Gmail,
 
 Working openly is a model of radical transparency; it means showing people the work you are doing, as you are doing it. It allows you to build with communities, not for them. [Read more about the benefits of open source software](https://opensource.com/life/15/12/why-open-source).
 
-Interledger believes in open payment solutions, or the application of open source and open standards to the finance world. Open payment solutions are ones that use the Open Payments API standard to allow third-parties to securely access digital accounts for viewing information and initiating payments. Using Open Payments is a cornerstone for ensuring interoperability in financial systems. This is the basic language systems need to talk to each other to begin financial interactions. See more about Open Payments in the Interledger Technology unit.
+Interledger believes in open payment solutions, or the application of open source and open standards to the finance world. Open payment solutions are ones that use the [Open Payments API standard](https://openpayments.dev) to allow third-parties to securely access digital accounts for viewing information and initiating payments. Using Open Payments is a cornerstone for ensuring interoperability in financial systems. This is the basic language systems need to talk to each other to begin financial interactions. More information about Open Payments can be found in the [Interledger Technology unit](/interledger-technology/what-is-the-ilp).
 
 ## Open Standards
 
 **[Open standards](https://www.w3.org/2005/09/dd-osd.html) are standards that are both publicly available to use and developed through a collaborative, community-driven process.**
 
-In many cases, financial exclusion is a natural consequence of poor digital public infrastructure. The term digital divide is used to describe the inequality created from the lack of access to equal digital resources. Collaboratively designed, open standards are an ideal way to define how equitable, inclusive technology should be built. It strongly intersects with the prior two values, in that the open financial standards that address financial exclusion will be interoperable and built on transparent open source tech.
+In many cases, financial exclusion is a natural consequence of poor digital public infrastructure. The term _digital divide_ is used to describe the inequality created from the lack of equal access to digital resources. 
+
+Collaboratively designed, open standards are an ideal way to define how equitable, inclusive technology should be built. Open financial standards that address financial exclusion will be interoperable and built on transparent open source tech, strongly intersecting with the prior two values.

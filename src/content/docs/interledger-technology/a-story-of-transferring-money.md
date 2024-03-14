@@ -4,6 +4,10 @@ sidebar:
   order: 2
 ---
 
+To show how the Interledger Protocol functions, let’s start with a story.
+
+Pretend this is a world without the internet. Alice wants to pay Bob $5 USD. Alice lives in New York, USA, while Bob lives in London, UK. Short of flying to London herself, how can Alice pay Bob?
+
 ## Transfer 1
 
 Alice’s friend, Carol, is flying to London. Alice asks Carol to pay Bob $5 USD and promises to pay Carol back when she returns. Carol knows Alice well and accepts Alice’s promise.

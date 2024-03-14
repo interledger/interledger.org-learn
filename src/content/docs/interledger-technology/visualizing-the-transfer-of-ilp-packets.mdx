@@ -6,7 +6,7 @@ sidebar:
 
 import { Mermaid } from "@interledger/docs-design-system";
 
-Let’s visualize some of the ILP Learning elements from the prior story. ILP specified three kinds of packets, two of them shown here.
+Let’s visualize some of the ILP learning elements from the [prior story](/interledger-technology/a-story-of-transferring-money). ILP specified three kinds of packets, two of them shown here.
 
 <Mermaid
   graph={`stateDiagram
@@ -24,6 +24,6 @@ Let’s visualize some of the ILP Learning elements from the prior story. ILP sp
 
 **Fulfill** packets confirm that the payment (or IOU) should be completed. As each node in the network gets the Fulfill packet, they adjust their balance and “accept” the IOU. Like in the analogy, each node effectively only deals with its immediate peers, but this can still allow money to go from one node to another node through any number of paths.
 
-The third kind of packet is a **Reject** packet, which does what you expect. If any problems occur at any stage in the process, this packet is sent back, cancelling the transaction.
+The third kind of packet is a **Reject** packet. If any problems occur at any stage in the process, this packet is sent back to the sender, cancelling the transaction.
 
-This whole process happens in milliseconds, and in fact if it doesn’t happen quickly enough, that will itself trigger a Reject packet.
+This whole process happens in milliseconds. In fact, if it doesn’t happen quickly enough, that will itself trigger a Reject packet.

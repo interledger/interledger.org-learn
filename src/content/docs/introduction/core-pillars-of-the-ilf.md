@@ -16,7 +16,11 @@ The Interledger Protocol (ILP) eases the friction of digital payments as it prov
 
 We advance our mandate through mission-aligned awards for entrepreneurs, organizations, and government agencies who are from or working with historically marginalized communities.
 
-Our core focus is: Research | Education | Financial Services | Ambassadorships
+Our core focus is on:
+- Research
+- Education
+- Financial Services
+- Ambassadorships
 
 ## Our values
 
@@ -32,7 +36,7 @@ Shaking up the status quo will not happen with the same tried and tired solution
 
 ### Unlocking Payment Potential
 
-Our role is to advocate the benefits of interoperability and inclusivity in digital payment networks, build a strong and sustainable open-source community, and be the neutral home of Interledger Protocol (ILP) and it’s associated standards, patents and trademarks.
+Our role is to advocate the benefits of interoperability and inclusivity in digital payment networks, build a strong and sustainable open-source community, and be the neutral home of the Interledger Protocol (ILP) and its associated standards, patents, and trademarks.
 
 The Interledger Protocol (ILP) was created in 2015 by Stefan Thomas and Evan Schwartz. It routes packets of value across the Interledger network just as TCP/IP routes packets of information across the internet. By moving value as seamlessly as the internet moves information, payments set up using ILP are secure, fast, and can be in any currency, including fiat or otherwise. This means transactions are not limited to particular banks, mobile money providers, or even borders.
 
