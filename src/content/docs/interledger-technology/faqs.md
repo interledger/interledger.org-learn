@@ -1,10 +1,10 @@
 ---
 title: FAQs
 sidebar:
-  order: 7
+  order: 6
 ---
 
-This page covers a few common questions we receive about Interledger-enabled systems. 
+This page covers a few common questions we receive about Interledger-enabled systems.
 
 ## How is Interledger different from PayPal or Venmo?
 
@@ -17,13 +17,13 @@ This page covers a few common questions we receive about Interledger-enabled sys
 
 [Rafiki](https://rafiki.dev) is open source software, developed by the Interledger Foundation, that enables account servicing entities (ASEs) to implement Interledger functionality on users' accounts.
 
-Rafiki simplifies the Interledger onboarding process for ASEs by packaging up the components necessary for operating on the Interledger network. This means ASEs don't have to build and maintain their own custom integrations. 
+Rafiki simplifies the Interledger onboarding process for ASEs by packaging up the components necessary for operating on the Interledger network. This means ASEs don't have to build and maintain their own custom integrations.
 
 ## What is Open Payments?
 
-[Open Payments](https://openpayments.dev) is a separate set of open source standards developed by the Interledger community that govern how clients (e.g., mobile apps) can interact with an account servicing entity. 
+[Open Payments](https://openpayments.dev) is a separate set of open source standards developed by the Interledger community that govern how clients (e.g., mobile apps) can interact with an account servicing entity.
 
-ILP lets you transfer money, but Open Payments governs how a client can access an account (with permission) to initiate payments and retrieve details like transaction history. This is in some ways a separate/complementary function that exists on the application layer. 
+ILP lets you transfer money, but Open Payments governs how a client can access an account (with permission) to initiate payments and retrieve details like transaction history. This is in some ways a separate/complementary function that exists on the application layer.
 
 Open Payments supports ILP as a payment method, but can also be used with other digital clearing and settlement protocols that might exist. The Interledger Foundation advocates for the use of Open Payments, whether through ILP or other payment methods.
 

@@ -1,10 +1,7 @@
 ---
 title: Time to Transfer Money
 sidebar:
-  order: 7
-next:
-  link: /interledger-technology/complete
-  label: Complete
+  order: 8
 ---
 
 :::tip[Your Turn: Transfer Some Money]
@@ -46,16 +43,18 @@ Congrats! You should now be on the home screen. The next step is to open a walle
 ## Step 4 - Set up your wallet address
 
 1. Click into your new account.
-2. Click **Add Payment Pointer**. The *Create Payment Pointer* screen appears
+2. Click **Add Payment Pointer**. The _Create Payment Pointer_ screen appears
+
 :::note[Payment pointers]
 
 A payment pointer is a wallet address that’s specific to Interledger. You’ll use the payment pointer when sending and receiving payments via Open Payments.
 
 :::
+
 3. Fill out the _Payment Pointer name_ and _Public name_ fields with any value.
 4. Click **Create**.
 
-## Step 5 - Add money to your wallet 
+## Step 5 - Add money to your wallet
 
 1. Click **Add Money**. The _Add Money to Account_ screen appears.
 2. Enter any amount. Since this isn't real money, you can add as much or as little as needed for testing purposes (this step would of course operate much differently in a real-world situation).
@@ -72,8 +71,9 @@ Now that you've set up a wallet account, you can buy something from Interledger 
 5. Click **Pay**.
 
 You should receive a popup asking you to approve the transaction. If you don’t see the popup:
-* Check your popup blocker
-* Ensure you're making the purchase on the same browser that's logged into your wallet account
+
+- Check your popup blocker
+- Ensure you're making the purchase on the same browser that's logged into your wallet account
 
 ## Step 7 - Show proof of purchase
 
