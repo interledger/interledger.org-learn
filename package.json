@@ -11,9 +11,9 @@
   "dependencies": {
     "@astrojs/node": "^8.2.3",
     "@astrojs/starlight": "^0.21.1",
-    "@interledger/docs-design-system": "^0.3.0",
+    "@interledger/docs-design-system": "^0.3.2",
     "@types/showdown": "^2.0.6",
-    "astro": "^4.5.3",
+    "astro": "^4.5.4",
     "html-to-text": "^9.0.5",
     "markdown-it": "^14.0.0",
     "node-html-parser": "^6.1.12",
