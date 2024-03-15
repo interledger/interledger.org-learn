@@ -10,4 +10,6 @@ Content discussion needed.
 
 :::
 
-For most users of software that is ILP-enabled, they will only really ever interact or see the Application layer, meaning they will say who they want money to go to and how much, and the software will take care of the rest of the layers. This will feel relatively simple and make sending money “as easy as sending an email” as we say, since there is a similar complexity to the process of sending an email, but as an email user we only ever interact with the top layer (figuring out what we want to send, and who to send it to).
+Most users of ILP-enabled software will only ever interact with or see the Application layer. For example, by telling their application who and how much to pay. Their application will interact with the other ILP layers behind the scenes.
+
+This will feel relatively simple and make sending money “as easy as sending an email”. We use this analogy because there is a similar complexity to the process of sending an email. As email users, we only ever interact with the top layer by deciding on the message to send and who to send it to.
