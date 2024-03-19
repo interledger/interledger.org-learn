@@ -4,14 +4,38 @@ sidebar:
   order: 4
 ---
 
-:::caution[Needs work]
-
-Content discussion needed
-
-:::
+import { LargeImg } from "@interledger/docs-design-system";
 
 The Interledger Protocol is actually divided into 5 layers. Each layer serves a particular role. The top layers are higher level and increasingly about the system as a whole, and the lower levels are more granular. We can explain each of these layers with an analogy to the post office.
 
 The top four ILP layers also mimic the four layers of the internet's TCP/IP protocol.
 
 More info is available in the [technical documentation](https://interledger.org/developers/rfcs/interledger-architecture/).
+
+<LargeImg
+  src="/img/analogy.svg"
+  alt="Diagram comparing the Interledger stack to a postal service"
+  hasBorder={false}
+/>
+
+## Application Layer
+
+This is the layer that sends a packet to the right location, or is the address on your envelope. In ILP terms, SPS stands for Single Payment Setup Protocol and it finds the place the ILPv4 packets should go, and how to get them there.
+
+## Transport Layer
+
+This layer is the envelope, which packages up the letter, or the main layer. In ILP, it’s a way to package and send multiple ILPv4’s at once.
+
+## Network Layer
+
+The main layer- if you are mailing a letter, this is the letter itself. These packets encode specific transfer amounts in ILP.
+
+## Link Layer
+
+This layer is the post office building itself, where you drop off your letter and it gets taken (aka linked) to the warehouse (ledger). In ILP terms, BTP stands for Bilateral Transfer Protocol, and this part talks to the ledger.
+
+## Settlement Layer
+
+In our post office analogy, the ledger is the warehouse in the back of the office where letters get sorted to their correct destination. In ILP terms, this is a traditional bank ledger.
+
+_[Post office illustrations by macrovector](https://www.freepik.com/free-vector/isometric-post-office-color-set-with-isolated-icons-furniture-mailboxes-automated-parcel-lockers-people-vector-illustration_60945985.htm#fromView=search&page=2&position=35&uuid=1f6526e0-dfaa-493d-9dac-b5f8561514f4) on Freepik_

@@ -144,8 +144,7 @@ div.community.community p {
   background-color: white;
 }
 
-@media (min-width: 80rem) {
-  nav.sidebar .sidebar-pane {
-    height: initial;
-  }
+/* Remove highlight stripe if heading is link */
+h3:has(a)::after {
+  display: none;
 }
