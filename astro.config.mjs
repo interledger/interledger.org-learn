@@ -20,22 +20,6 @@ export default defineConfig({
         "./src/styles/learn.css",
         "./src/styles/atom-one-light.min.css",
       ],
-      head: [
-        {
-          tag: "script",
-          attrs: {
-            src: "/scripts/highlight.min.js",
-            defer: true,
-          },
-        },
-        {
-          tag: "script",
-          attrs: {
-            src: "/scripts/init.js",
-            defer: true,
-          },
-        },
-      ],
       social: {
         github: "https://github.com/interledger",
         instagram: "https://www.instagram.com/interledgerfoundation/",

@@ -4,6 +4,7 @@ sidebar:
   order: 4
 next:
   label: Digital Financial Inclusion
+tableOfContents: false
 ---
 
 :::tip[Your Turn: Share Your Thoughts]
