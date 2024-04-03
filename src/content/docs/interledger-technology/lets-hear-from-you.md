@@ -2,6 +2,7 @@
 title: Let’s Hear From You
 sidebar:
   order: 7
+tableOfContents: false
 ---
 
 :::tip[Your Turn: Raise Your Concerns]

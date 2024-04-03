@@ -4,6 +4,7 @@ sidebar:
   order: 3
 next:
   label: The Interledger Protocol (ILP)
+tableOfContents: false
 ---
 
 :::tip[Your Turn: Share What You Learned]
