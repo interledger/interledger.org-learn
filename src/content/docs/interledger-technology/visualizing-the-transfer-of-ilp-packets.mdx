@@ -6,6 +6,7 @@ tableOfContents: false
 ---
 
 import { Mermaid } from "@interledger/docs-design-system";
+import CompletionTracker from '../../../components/CompletionTracker.tsx'
 
 Let’s visualize some of the ILP learning elements from the [prior story](/interledger-technology/a-story-of-transferring-money). ILP specified three kinds of packets, two of them shown here.
 
@@ -28,3 +29,5 @@ Let’s visualize some of the ILP learning elements from the [prior story](/inte
 The third kind of packet is a **Reject** packet. If any problems occur at any stage in the process, this packet is sent back to the sender, cancelling the transaction.
 
 This whole process happens in milliseconds. In fact, if it doesn’t happen quickly enough, that will itself trigger a Reject packet.
+
+<CompletionTracker postId="visualizing-the-transfer-of-ilp-packets" client:only="react" />

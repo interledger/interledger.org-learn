@@ -4,6 +4,8 @@ sidebar:
   order: 2
 ---
 
+import CompletionTracker from '../../../components/CompletionTracker.tsx'
+
 To show how the Interledger Protocol functions, let’s start with a story.
 
 Pretend this is a world without the internet. Alice wants to pay Bob $5 USD. Alice lives in New York, USA, while Bob lives in London, UK. Short of flying to London herself, how can Alice pay Bob?
@@ -41,3 +43,5 @@ ILP involves a two-way message. The first part of the message, called a Prepare 
 In our story, Bob accepts Alice’s intent to pay (the Fulfill packet). The exchange of actual money between Carol and Bob, and Alice and Carol, is known as settlement. Settlement happens separate from and outside of the Interledger network. This is one advantage of ILP because settlement is typically a slow and expensive process.
 
 :::
+
+<CompletionTracker postId="a-story-of-transferring-money" client:only="react" />
