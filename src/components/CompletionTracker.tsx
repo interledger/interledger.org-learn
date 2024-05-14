@@ -44,9 +44,16 @@ const CompletionTracker: FC<CompletionTrackerProps> = ({ postId }) => {
     };
 
     return (
-        <button onClick={toggleCompletion}>
-            {isCompleted ? 'Mark as Incomplete' : 'Mark as Complete'}
-        </button>
+        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+            <button className="completedBtn" onClick={toggleCompletion}>
+                {isCompleted ? <>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="checkmark">
+                        <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                    Completed
+                </> : 'Mark Complete' }
+            </button>
+        </div>
     );
 };
 
