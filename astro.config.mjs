@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import preact from '@astrojs/preact';
 import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
@@ -53,7 +54,7 @@ export default defineConfig({
           autogenerate: { directory: "interledger-technology" },
         },
       ],
-    }),
+    }), preact({ compat: true })
   ],
   server: {
     port: 1106,

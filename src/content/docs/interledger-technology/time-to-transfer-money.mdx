@@ -5,6 +5,7 @@ sidebar:
 ---
 
 import { Aside } from "@astrojs/starlight/components";
+import CompletionTracker from '../../../components/CompletionTracker.tsx'
 
 <Aside type="tip" title="Your Turn: Transfer Some Money">
 
@@ -101,3 +102,5 @@ _If the transaction doesn’t seem to be going through, ensure you have enough t
 In the [Slack channel](https://app.slack.com/client/T0KKJC1N1/C06MAS29NF4), type `TBD`, then upload your screenshot.
 
 :::
+
+<CompletionTracker postId="time-to-transfer-money" client:only="preact" />

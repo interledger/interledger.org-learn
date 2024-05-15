@@ -4,6 +4,7 @@ sidebar:
   order: 2
 ---
 
+import CompletionTracker from '../../../components/CompletionTracker.tsx'
 import { Disclosure } from "@interledger/docs-design-system";
 
 Let’s explore the different levels of impact by following the stories of three individuals: a private citizen, a small business owner, and a government employee. These stories are based on the problems and challenges of real people.
@@ -39,3 +40,5 @@ Her concern is that there are inter-related technical, legal and social problems
 <Disclosure toggleText="How digital financial inclusion can help" client:load>
   Digital financial inclusion can allow her to bring more individuals into the formal economy. These individuals will have more reliable and safe access to the finances needed to run their lives. Additionally, the government would save a significant amount of resources if the economy became more digital and less cash-based.
 </Disclosure>
+
+<CompletionTracker postId="impact-of-digital-financial-inclusion" client:only="preact" />
