@@ -1,4 +1,4 @@
-import { useState, useEffect, type FC } from 'react';
+import { useState, useEffect } from 'preact/hooks';
 
 type CompletionTrackerProps = {
     postId: string;
@@ -22,7 +22,7 @@ function saveCompletedPosts(newCompletedPosts: Set<string>) {
     }
 }
 
-const CompletionTracker: FC<CompletionTrackerProps> = ({ postId }) => {
+const CompletionTracker = ({ postId }: CompletionTrackerProps) => {
     const [isCompleted, setIsCompleted] = useState<boolean>(false);
 
     useEffect(() => {

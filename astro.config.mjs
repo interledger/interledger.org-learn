@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import react from '@astrojs/react';
+import preact from '@astrojs/preact';
 import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
@@ -7,7 +7,6 @@ export default defineConfig({
   site: "https://interledger.org",
   // base: "/learn",
   integrations: [
-    react(),
     starlight({
       title: "Interledger Learning Hub",
       description: "Enable seamless exchange of value across payment networks.",
@@ -55,7 +54,7 @@ export default defineConfig({
           autogenerate: { directory: "interledger-technology" },
         },
       ],
-    }),
+    }), preact({ compat: true })
   ],
   server: {
     port: 1106,
