@@ -29,6 +29,16 @@
   --color-primary-bg: oklch(51.95% 0.089 187.7 / 0.1);
 }
 
+/* Utility classes */
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* Site header overrides */
 header.header {
   background-color: var(--sl-color-black);
@@ -37,19 +47,13 @@ header.header {
 header.header .site-title {
   flex: none;
 }
-
-/* Github pulled spec content */
-.sl-markdown-content h1 {
-  display: none;
-}
-
-.sl-container .sl-markdown-content astro-island > h1 + p,
-.sl-container .sl-markdown-content astro-island > h1 + blockquote {
-  margin-block-start: 0;
-}
-
-.content-panel + .content-panel {
-  padding-block-start: 0;
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* Navigation sidebar font issue */
@@ -81,8 +85,7 @@ div.overview-item.overview-item div {
   margin-block-start: 0;
 }
 
-@media screen and (max-width: 599px),
-  screen and (min-width: 800px) and (max-width: 999px) {
+@media screen and (max-width: 599px), screen and (min-width: 800px) and (max-width: 999px) {
   div.overview-item {
     display: flex;
     align-items: center;
@@ -90,8 +93,7 @@ div.overview-item.overview-item div {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 799px),
-  screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 799px), screen and (min-width: 1000px) {
   .overview-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
