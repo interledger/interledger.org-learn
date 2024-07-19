@@ -1,0 +1,31 @@
+---
+title: Open Payments 101
+prev: false
+next: false
+---
+
+import OPFlow from "../../../components/OPFlow/OPFlow.astro";
+
+Handling payments is crucial for many online applications. Open Payments provides a standardized way for applications to securely communicate directly with users' accounts, whether those accounts are bank accounts, digital wallets, or mobile money accounts.
+
+**Benefits of Open Payments**:
+
+1. Eliminates Reliance on Third-Party Gateways: Developers no longer need third-party payment gateways to communicate with credit card networks.
+2. Promotes Digital Financial Inclusion: Open Payments supports various account types with a single integration, including bank and mobile money accounts.
+3. Reduces Transaction Costs: Open Payments is free to use. Development costs are lowered by integrating a single standard, and direct communication eliminates fees and delays from unnecessary middlemen, reducing overall transaction costs for users.
+
+Open Payments allows applications to send messages directly to users' account providers to create payment obligations, not to transfer money. The actual transfer of funds occurs on the settlement layer, which handles the movement of money between accounts. While Open Payments facilitates communication between different systems, these systems must still connect to settle funds.
+
+Open Payments works like email. Just as Gmail and Outlook use a shared language to communicate, Open Payments enables transactions between different account types. Account providers give users a human-readable wallet address, similar to an email address. Applications need only the sender’s and recipient’s wallet addresses to create a payment obligation. Once created, the parties involved handle the settlement of funds.
+
+**The advantages of this approach are that**:
+
+1. Users don’t share sensitive financial data with third-party applications.
+2. Applications avoid the risks of storing sensitive data.
+3. Applications are free to innovate in the payment space without being registered financial service providers.
+
+Users retain control over their transactions. Any withdrawal requires explicit consent, and users can define the amount, time frame, and frequency of access. This ensures transparency and security, providing seamless transactions, transparent fees, and enhanced control over financial data.
+
+## Open Payments Flow
+
+<OPFlow />
