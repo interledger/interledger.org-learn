@@ -1,0 +1,395 @@
+---
+import { Image } from 'astro:assets';
+import User from './img/01-user.svg';
+import Bank from './img/01-sab.svg';
+import Store from './img/02-checkout.png';
+import Server from './img/03-server.svg';
+import Wallet from './img/08-wallet.svg';
+---
+
+<section data-flow="1">
+  <p><strong>Sign up for an account with an Open Payments enabled account provider</strong></p>
+  <div class="diagram">
+    <figure>
+      <Image src={User} alt="Person named Ernie" />
+      <figcaption>Ernie</figcaption>
+    </figure>
+    <p class="arrow1" data-step="1">Please can I open a bank account?</p>
+    <p class="arrow2" data-step="2">Sure, your account number is 1089550<br>Your wallet address is https://superawesome.bank/ernie</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Bank} alt="Super Awesome Bank which is an Open Payments enabled account provider" />
+      <figcaption>Ernie's bank</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="2">
+  <p><strong>Only hand over your publicly shareable wallet address</strong></p>
+  <div class="diagram">
+    <figure>
+      <Image src={User} alt="Person named Ernie" />
+      <figcaption>Ernie</figcaption>
+    </figure>
+    <p data-step="1">I want to buy these hiking boots<br>Here is my wallet address: https://superawesome.bank/ernie</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Store} alt="Checkout page for buying a new pair of hiking boots costing $60.00" />
+      <figcaption>Cool Gear Online</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="3">
+  <p><strong>The application can send messages to your wallet address to figure out how to get in touch with your account provider directly</strong></p>
+  <div class="diagram" style="--left-col:2fr;--right-col:1fr">
+    <figure>
+      <Image src={Store} alt="Checkout page for buying a new pair of hiking boots costing $60.00" />
+      <figcaption>Cool Gear Online</figcaption>
+    </figure>
+    <p class="arrow1" data-step="1">Send message to https://superawesome.bank/ernie<br>“Hey, where can I contact this person's account</p>
+    <p class="arrow2" data-step="2">“Their account provider is Super Awesome Bank,<br>you should direct further communication to them”</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Server} alt="Wallet address server which contains information about your digital wallet" />
+      <figcaption>Wallet address server</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="4">
+  <p><strong>The application can send messages directly to your account provider</strong></p>
+  <div class="diagram" style="--left-col:1fr;--right-col:1fr">
+    <figure>
+      <Image src={Store} alt="Checkout page for buying a new pair of hiking boots costing $60.00" />
+      <figcaption>Cool Gear Online</figcaption>
+    </figure>
+    <p data-step="1">Person with wallet address<br>https://superawesome.bank/ernie wants to pay me money</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Bank} alt="Super Awesome Bank which is an Open Payments enabled account provider" />
+      <figcaption>Ernie's bank</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="5">
+  <p><strong>You remain in control and your account provider asks for your consent and can also show you all transaction fees upfront for total transparency</strong></p>
+  <div class="diagram" style="--left-col:2fr;--right-col:1fr">
+    <figure>
+      <Image src={Bank} alt="Super Awesome Bank which is an Open Payments enabled account provider" />
+      <figcaption>Ernie's bank</figcaption>
+    </figure>
+    <p class="arrow1" data-step="1">Do you want to pay Cool Gear Online $60 + $1 in transaction fees?</p>
+    <p class="arrow2" data-step="2">Yes!</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={User} alt="Person named Ernie" />
+      <figcaption>Ernie</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="6">
+  <p><strong>If you consent, your account provider will give the application access to an amount of money that is set aside in your account.</strong> You control how much that amount is, whether or not it is a recurring payment or one-off? And if it is recurring, how long the duration should be and at what frequency?</p>
+  <div class="diagram" style="--left-col:1fr;--right-col:1fr">
+    <figure>
+      <Image src={Bank} alt="Super Awesome Bank which is an Open Payments enabled account provider" />
+      <figcaption>Ernie's bank</figcaption>
+    </figure>
+    <p data-step="1">Person has consented. I commit to making this payment to you.</p>
+    <p data-step="2" class="not-arrow">The Open Payments standard ends here with the successful completion of a payment obligation.</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Store} alt="Checkout page for buying a new pair of hiking boots costing $60.00" />
+      <figcaption>Cool Gear Online</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="7">
+  <p><strong>Now the application can inform the user that the payment is sorted and their purchase can go ahead</strong></p>
+  <div class="diagram" style="--left-col:2fr;--right-col:1fr">
+    <figure>
+      <Image src={Store} alt="Checkout page for buying a new pair of hiking boots costing $60.00" />
+      <figcaption>Cool Gear Online</figcaption>
+    </figure>
+    <p data-step="1">Purchase successful. Your hiking boots will be delivered.</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={User} alt="Person named Ernie" />
+      <figcaption>Ernie</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section data-flow="8">
+  <p><strong>On the actual settlement layer where funds are moved between accounts, Super Awesome Bank will send the commited amount of money to Cool Gear Online's digital wallet</strong></p>
+  <div class="diagram" style="--left-col:1fr;--right-col:1fr">
+    <figure>
+      <Image src={Bank} alt="Super Awesome Bank which is an Open Payments enabled account provider" />
+      <figcaption>Ernie's bank</figcaption>
+    </figure>
+    <p class="settlement" data-step="1">Sending $60…</p>
+    <div class="step-controls">
+      <button data-action="prev">Previous step</button>
+      <button data-action="next">Next step</button>
+      <span class="message">&nbsp;</span>
+    </div>
+    <figure>
+      <Image src={Wallet} alt="PayMe Digital Wallet which is an Open Payments enabled account provider" />
+      <figcaption>Cool Gear Online's digital wallet</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="section-controls">
+  <button data-action="prev">Previous section</button>
+  <button data-action="next">Next section</button>
+</div>
+
+<style>
+.diagram {
+  --left-col: 1fr;
+  --right-col: 2fr;
+
+  align-items: center;
+  display: grid;
+  grid-template-columns: var(--left-col) 45% var(--right-col);
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+figure:first-of-type {
+  grid-area: left;
+}
+
+figcaption {
+  font-size: var(--step--1);
+  font-weight: bold;
+}
+
+.diagram p {
+  transition: opacity 0.2s ease-in-out;
+  font-size: var(--step--1);
+}
+
+.diagram p:first-of-type {
+  grid-area: arrow1;
+}
+
+.diagram p:not(.not-arrow):after {
+  content: "";
+  max-width: 100%;
+  display: block;
+  background: no-repeat url("img/arrow.svg") left / contain;
+  height: 3em;
+}
+
+.diagram p:nth-of-type(2) {
+  grid-area: arrow2;
+  text-align: right;
+}
+
+.diagram p.not-arrow {
+  text-align: center;
+}
+
+.diagram p:nth-of-type(2):after {
+  transform: rotate(180deg);
+}
+
+.diagram p.settlement:after {
+  background-image: url("img/arrow2.svg")
+}
+
+figure:nth-of-type(2) {
+  grid-area: right;
+}
+
+@media (scripting: enabled) {
+  .diagram {
+    grid-template-areas: "left arrow right" "left arrow right";
+  }
+
+  .step-controls,
+  .diagram p:first-of-type,
+  .diagram p:nth-of-type(2) {
+    grid-area: arrow;
+  }
+
+  .step-controls {
+    justify-self: center;
+  }
+
+  .step-controls.step-controls.step-controls {
+    margin-block-start: 65%;
+  }
+
+  .message {
+    display: block;
+    margin-block-start: 0.5em;
+    text-align: center;
+  }
+
+  .section-controls {
+    margin-block-start: 1em;
+    text-align: center;
+  }
+}
+
+@media (scripting: none) {
+  .diagram {
+    grid-template-areas: "left arrow1 right" "left arrow2 right";
+  }
+
+  .diagram p:before {
+    align-items: center;
+    background-color: #008897;
+    border-radius: 50%;
+    display: inline-flex;
+    height: 1.5em;
+    justify-content: center;
+    margin-inline-end: 0.5em;
+    width: 1.5em;
+  }
+  .arrow1:first-of-type:before {
+    content: "1";
+  }
+  .arrow2:nth-of-type(2):before {
+    content: "2";
+  }
+  .section-controls,
+  .step-controls {
+    display: none;
+  }
+}
+
+</style>
+
+<script>
+let sectionCounter = 1;
+const sections = document.querySelectorAll("[data-flow]");
+const totalSections = sections.length;
+if (totalSections > 0) {
+  sections.forEach(section => {
+    if (sectionCounter !== parseInt((section as HTMLElement).dataset.flow as string)) {
+      section.classList.add("visually-hidden");
+    }
+    let stepCounter = 0;
+    const steps = section.querySelectorAll("[data-step]");
+    const totalSteps = steps.length;
+    steps.forEach(step => {
+      if (stepCounter !== parseInt((step as HTMLElement).dataset.step as string)) {
+        step.classList.add("transparent");
+      }
+    });
+    const btnPrevStep = section.querySelector(".step-controls [data-action='prev']");
+    const btnNextStep = section.querySelector(".step-controls [data-action='next']");
+    btnNextStep?.addEventListener("click", () => {
+      if (totalSteps > stepCounter) {
+        stepCounter += 1;
+        section.querySelector(".message")!.innerHTML = "&nbsp;";
+        steps.forEach(step => {
+          if (stepCounter === parseInt((step as HTMLElement).dataset.step as string)) {
+            step.classList.remove("transparent");
+          } else {
+            step.classList.add("transparent");
+          }
+        });
+      } else if (sectionCounter === totalSections) {
+        section.querySelector(".message")!.innerHTML = "This is the end";
+      } else {
+        section.querySelector(".message")!.innerHTML = "Go to next section";
+      }
+    }, false);
+    btnPrevStep?.addEventListener("click", () => {
+      if (stepCounter > 0) {
+        stepCounter = stepCounter - 1;
+        section.querySelector(".message")!.innerHTML = "&nbsp;";
+        steps.forEach(step => {
+          if (stepCounter === parseInt((step as HTMLElement).dataset.step as string)) {
+            step.classList.remove("transparent");
+          } else {
+            step.classList.add("transparent");
+          }
+        });
+      } else if (sectionCounter === 1) {
+        section.querySelector(".message")!.innerHTML = "This is the start";
+      } else {
+        section.querySelector(".message")!.innerHTML = "Go to previous section";
+      }
+    }, false);
+  });
+}
+const btnPrevSection = document.querySelector(".section-controls [data-action='prev']");
+const btnNextSection = document.querySelector(".section-controls [data-action='next']");
+btnNextSection?.addEventListener("click", () => {
+  if (totalSections > sectionCounter) {
+    sectionCounter += 1;
+    sections.forEach(section => {
+      if (sectionCounter === parseInt((section as HTMLElement).dataset.flow as string)) {
+        section.classList.remove("visually-hidden");
+      } else {
+        section.classList.add("visually-hidden");
+      }
+    });
+  } else {
+    console.log("end reached");
+  }
+}, false);
+btnPrevSection?.addEventListener("click", () => {
+  if (sectionCounter > 1) {
+    sectionCounter = sectionCounter - 1;
+    console.log(sectionCounter);
+    sections.forEach(section => {
+      if (sectionCounter === parseInt((section as HTMLElement).dataset.flow as string)) {
+        section.classList.remove("visually-hidden");
+      } else {
+        section.classList.add("visually-hidden");
+      }
+    });
+  } else {
+    console.log("start reached");
+  }
+}, false);
+</script>
