@@ -28,15 +28,19 @@ export default defineConfig({
         "./src/styles/learn.css",
         "./src/styles/atom-one-light.min.css",
       ],
-      social: {
-        github: "https://github.com/interledger",
-        instagram: "https://www.instagram.com/interledgerfoundation/",
-        linkedin: "https://www.linkedin.com/company/interledger-foundation/",
-        mastodon: "https://interledger.social/about",
-        slack: "https://communityinviter.com/apps/interledger/interledger-working-groups-slack",
-        "x.com": "https://twitter.com/interledger",
-        youtube: "https://www.youtube.com/@InterledgerFoundation",
-      },
+      social: [
+        { icon: "github", label: "GitHub", href: "https://github.com/interledger" },
+        { icon: "instagram", label: "Instagram", href: "https://www.instagram.com/interledgerfoundation/" },
+        { icon: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/company/interledger-foundation/" },
+        { icon: "mastodon", label: "Mastadon", href: "https://interledger.social/about" },
+        {
+          icon: "slack",
+          label: "Slack",
+          href: "https://communityinviter.com/apps/interledger/interledger-working-groups-slack",
+        },
+        { icon: "x.com", label: "X.com", href: "https://twitter.com/interledger" },
+        { icon: "youtube", label: "Youtube", href: "https://www.youtube.com/@InterledgerFoundation" },
+      ],
       sidebar: [
         {
           label: "Interledger 101",
