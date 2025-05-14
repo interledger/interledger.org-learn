@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
+import starlightFullViewMode from "starlight-fullview-mode";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
             switcherStyle: "dropdown",
           },
         }),
+        starlightFullViewMode(),
       ],
       logo: {
         dark: "./src/assets/logo_color-white_foundation.svg",
